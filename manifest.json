@@ -1,12 +1,20 @@
 {
     "name": "Backdrop for ChatGPT",
     "description": "This is a combination of an extension and ChatGPT plugin that work together to add ChatGPT into your existing workflow. Instantly send information from your currrent web page into ChatGPT",
-    "version": "0.10000000001",
+    "version": "0.1001",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": [],
+    "permissions": [
+        "tabCapture",
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content-script.js"]
+        }
+      ],
     "action": {
     "default_popup": "popup.html",
     "default_icon": {
