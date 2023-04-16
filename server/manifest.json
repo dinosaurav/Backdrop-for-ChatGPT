@@ -1,0 +1,12 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Backdrop",
+    "name_for_model": "backdrop_demo",
+    "description_for_human": "Backdrop - instant context from your browser",
+    "description_for_model": "Provides context for pages that the user is browsing. If the user asks about this page, request the current page as context",
+    "api": { "url": "/openapi.json" },
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg",
+    "auth": { "type": "none" },
+    "legal_info_url": "http://dinosaurav.com",
+    "contact_email": "hidden@gmail.com"
+  }  
